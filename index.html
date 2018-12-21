@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>你划我猜</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css">
+
+        <link rel="stylesheet" href="css/personal.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+		    link.rel = 'stylesheet';
+		    link.type = 'text/css';
+		    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		    document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+            <div class="slides" id="words-wrapper" style="font-size: 100px;">
+                <section class="animated infinite swing delay-2s" style="color:green">你划我猜</section>
+            </div>
+            <div id="leftTime" style="text-align: center; margin-top: 100px; height: 100%;"></div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+        
+
+		<script>
+			Reveal.initialize({
+                // dependencies: [
+                //     {src: 'plugin/markdown/marked.js'},
+                //     {src: 'plugin/markdown/markdown.js'}
+                // ]
+            });
+        </script>
+
+        <script src="https://cdn.bootcss.com/lodash.js/4.17.11/lodash.min.js"></script>
+        <script src="js/words.js"></script>
+        <script src="js/addWords.js"></script>
+        <script src="js/countDown.js"></script>
+	</body>
+</html>
